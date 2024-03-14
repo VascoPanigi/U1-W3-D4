@@ -27,27 +27,29 @@ body {
   margin-inline: auto;
 }
 
-/* questo html andra' messo a .cell */
 /* CELLS STYLING */
 
-.board > div {
+.cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #eeecfa;
   border-radius: 30%;
   font-weight: 800;
 }
 
-.cell {
-}
-
 .selected {
+  background-color: #7a408a;
 }
 
 /* BUTTON */
 
-#submit-btn {
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.play-button {
   margin-block: 3em;
   background-color: rgb(100, 33, 255); /* Green */
   border: none;
@@ -57,4 +59,5 @@ body {
   padding: 2em 4em;
   text-align: center;
   font-size: 1em;
+  max-width: 25%;
 }
