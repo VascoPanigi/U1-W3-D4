@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    202deg,
+    rgba(158, 13, 20, 1) 0%,
+    rgba(60, 0, 176, 1) 100%
+  );
+  background-attachment: fixed;
+  height: 100vh;
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(11, 4rem);
+  gap: 1em;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* questo html andra' messo a .cell */
+/* CELLS STYLING */
+
+.board > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30%;
+  font-weight: 800;
+}
+
+.cell {
+}
+
+.selected {
+}
+
+/* BUTTON */
+
+#submit-btn {
+  margin-block: 3em;
+  background-color: rgb(100, 33, 255); /* Green */
+  border: none;
+  border-radius: 20%;
+  border: 1px solid #0c0b1d;
+  color: #f6f5ff;
+  padding: 2em 4em;
+  text-align: center;
+  font-size: 1em;
+}
