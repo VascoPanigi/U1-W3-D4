@@ -17,8 +17,6 @@ const handleStart = () => {
   }
 };
 
-// newBoardCell.innerText === newNumber &&
-
 const numberExtraction = () => {
   const tombolaNumCell = document.querySelectorAll(".cell");
   console.dir(tombolaNumCell);
@@ -28,8 +26,10 @@ const numberExtraction = () => {
     if (parseInt(cell.innerText) === randomNumExtraction) {
       console.log(randomNumExtraction);
       cell.classList.add("issued");
-      console.log("ci sono!");
-      console.dir(cell);
+    } else {
+      console.log("unlucky, try again");
     }
   });
 };
+
+// && !cell.classList.contains("issued")
